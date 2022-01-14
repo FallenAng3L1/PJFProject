@@ -1,20 +1,22 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver import ActionChains
 from selenium.webdriver.support.select import Select
 from datetime import datetime
 from datetime import date
 import time as t
 import agoda.constants as const
 from agoda.agoda_results import AgodaReport
-import pandas as pd
+from selenium.webdriver.common.keys import Keys
+
+
+
 
 
 class Agoda(webdriver.Chrome):
     def __init__(self, teardown = False):
         self.teardown = teardown
         super(Agoda, self).__init__()
-        self.implicitly_wait(15)
+        self.implicitly_wait(const.sleep_val)
         self.maximize_window()
     def __exit__(self, exc_type, exc_val, exc_tb):
         if self.teardown:
@@ -24,7 +26,7 @@ class Agoda(webdriver.Chrome):
         self.get(const.BASE_URL)
 
     def accept_popup(self):
-        self.implicitly_wait(10)
+        self.implicitly_wait(const.sleep_val)
         accept_button = self.find_element(By.CLASS_NAME, 'ab-close-button')
         accept_button.click()
 
@@ -114,21 +116,29 @@ class Agoda(webdriver.Chrome):
         search_button.click()
 
     def scroll_down(self):
-        t.sleep(10)
-
-        y = 500
-        for timer in range(0, 100):
+        self.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + Keys.HOME)
+        t.sleep(const.sleep_val)
+        y = const.scroll_value
+        new_height = 0
+        last_height = self.execute_script("return document.body.scrollHeight")
+        while True:
             self.execute_script("window.scrollTo(0, " + str(y) + ")")
-            y += 500
-            t.sleep(0.7)
+            y += const.scroll_value
+
+            t.sleep(const.sleep_scroll_val)
+            if y >= last_height:
+                break
+            last_height = self.execute_script("return document.body.scrollHeight")
+
     def report_results(self):
         hotel_boxes = self.find_element(By.ID, 'contentContainer')
         report = AgodaReport(hotel_boxes)
-        names = report.pull_titles()
-        prices = report.pull_prices()
-        scores = report.review_score()
-        data = {'Nazwa Hotelu':names,
-                'Cena':prices,
-                'Ocena klienta':scores}
-        df = pd.DataFrame(data)
-        df.to_csv('dane_hotele.csv',index=False)
+        report.pull_titles()
+        report.pull_prices()
+        report.review_score()
+
+
+    def next_page(self):
+        next_page_button = self.find_element(By.ID, 'paginationNext')
+        next_page_button.click()
+
