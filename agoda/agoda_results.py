@@ -2,11 +2,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebElement
 import selenium.common.exceptions as ex
 import agoda.constants as const
+from selenium.webdriver.common.action_chains import ActionChains
+import time as t
 class AgodaReport:
     def __init__(self, boxes_section_element:WebElement):
         self.boxes_section_element = boxes_section_element
         self.deal_boxes = self.pull_deal_boxes()
-
 
     def pull_deal_boxes(self):
         return self.boxes_section_element.find_elements(By.CLASS_NAME, 'PropertyCardItem')
@@ -16,7 +17,6 @@ class AgodaReport:
         for deal_box in self.deal_boxes:
             try:
                 hotel_name = deal_box.find_element(By.CLASS_NAME, 'PropertyCard__HotelName').get_attribute('innerHTML').strip()
-                print(hotel_name)
             except ex.NoSuchElementException:
                 hotel_name = deal_box.find_element(By.CLASS_NAME, 'PropertyCard__HotelName').get_attribute('innerHTML').strip()
             hotel_names.append(hotel_name)
@@ -38,3 +38,4 @@ class AgodaReport:
             except Exception:
                 review_scores.append("NA")
         const.hotel_rating_all += review_scores
+
