@@ -1,91 +1,38 @@
-Hotel Name,Price,Rating
-a&amp;o Warsaw Wola,137,8
-Moxy Warsaw Praga,358,9
-Crowne Plaza Warsaw - The HUB,485,9
-"Radisson Blu Sobieski Hotel, Warsaw",244,8
-Chill Apartments City Link,312,8
-Start Hotel Aramis - Portale,128,7
-Hampton by Hilton Warsaw Reduta,283,9
-NYX Hotel Warsaw by Leonardo Hotels,485,9
-Radisson Collection Hotel Warsaw,421,9
-Leonardo Royal Hotel Warsaw,255,8
-Novotel Warszawa Centrum Hotel,303,8
-Hampton Inn Warsaw City Centre (Hampton Inn Warsaw City Centre Poland),353,8
-Evva &amp; Peppe Old Town Flat,465,9
-Tulip Residences Warsaw Targowa,383,9
-Mercure Warszawa Centrum Hotel,313,8
-Apartament Zakatek Pragi,499,8
-Warsaw Plaza Hotel,246,8
-Warsaw Marriott Hotel,547,8
-Holiday Inn Warsaw City Centre,361,9
-Hampton Inn Warszawa,308,9
-Golden Apartments Ursynow by Renters,299,8
-Hilton Warsaw City,486,8
-DoubleTree Hotel and Conference Centre Warsaw,507,8
-Millennium Manufaktura Blue,264,9
-o3Hotel dawny Start Hotel Atos,202,8
-Hostel Siennicka,123,6
-Novotel Warszawa Airport,245,8
-Warsaw Concierge Silver Apartment,315,9
-Ibis Warszawa Reduta,261,8
-Campanile Hotel Varsovie,186,8
-Stadium Apart,523,9
-Renaissance Warsaw Airport Hotel,382,9
-Villa Plaza,267,8
-Hotel Holiday Park,323,8
-Airport Hotel Okecie,446,9
-Ibis Warszawa Stare Miasto Hotel,274,8
-Rynek Starego Miasta Old Town Market Square - 2 bedrooms apartment,450,8
-Mamaison Hotel Le Regina Warsaw,901,9
-Ibis Warszawa Centrum,208,8
-Warsaw New Town Apartments by Renters,279,8
-Sheraton Grand Warsaw,544,9
-Candy Apartments Warszawa,280,8
-HETMAN,254,8
-Mercure Airport Warszawa Hotel,243,8
-"Hotel Bristol, a Luxury Collection Hotel, Warsaw",626,9
-Chill Apartments Harmony Park,306,8
-Arche Hotel Poloneza,436,8
-Dandelion B&amp;B,174,8
-The Westin Warsaw,1&nbsp;191,9
-Regent Warsaw Hotel,477,8
-Apartamenty Zamoyskiego Warszawa Stadion,348,9
-SCSK Zurawia,280,8
-ibis Styles Warszawa City,432,9
-Sangate Hotel Airport,239,7
-Siec Hoteli Fort Warszawa,232,7
-Hotel Arche Geologiczna,263,9
-Hotel Polonia Palace,527,9
-H15 Boutique Hotel,797,9
-Tatamka Hostel,150,8
-Sofitel Victoria Warszawa (Sofitel Victoria Warsaw Hotel),494,9
-Szafir - NoclegiGrodziskPL,186,9
-Hotel Warszawa,1&nbsp;079,9
-Warsaw Hostel Centrum,236,8
-Golden Tulip Warsaw Airport,220,8
-Holiday Inn Express Warsaw - Mokotow,336,9
-Hotelik Okecie 39 - free transfer to airport,133,7
-Loft Car Factory,170,8
-Safestay Warsaw,249,9
-Hit Hotel,201,8
-ibis Warszawa Ostrobramska,171,8
-Apartamenty Media Park,233,8
-Centrum Barnabitow,340,8
-Prestige Apartments Wola Kolejowa,290,8
-Arche Hotel Krakowska,471,8
-ibis Styles Warszawa Centrum,291,9
-ibis Styles Warszawa West,351,8
-Apartment4You Select Kolejowa,298,8
-Bloom Hotel,300,9
-Oki Doki OLD TOWN Hostel,303,8
-Arcus Premium Hostel,226,8
-Renttner Apartamenty,429,9
-Villa Jeziorki 71,229,8
-Hotel Boss,330,8
-Chill Apartments Ursynow,246,8
-Castle Inn,391,8
-Arkadia,288,7
-Mamaison Residence Diana,388,9
-Platinum Hotel&amp;Residence Wilanow,247,8
-Arche Hotel Puławska Residence,362,8
-Hotel Witkowski,341,8
+Hotel Name,Price,Rating,Śniadanie,winda
+Szafir - NoclegiGrodziskPL,179,9,0,0
+NYX Hotel Warsaw by Leonardo Hotels,476,9,1,0
+Warsaw - Apartments Sadyba,107,9,1,0
+Warsaw - Aparts - Manhattan Mokotow,244,8,0,0
+"Radisson Blu Sobieski Hotel, Warsaw",543,8,1,0
+Leonardo Royal Hotel Warsaw,288,8,1,0
+Apartament (55 m²) w okolicy Ochota z 2 sypialniami i 1 łazienkami (Apartment Metropolia typu deluxe near Airport),437,10,0,1
+Sangate Hotel Airport,261,7,1,0
+ibis budget Warszawa Centrum,161,8,1,0
+Hotel Reytan,283,8,1,0
+Hotel Metropol,323,8,1,0
+Lovely LUX Garden Flat near Royal Park,704,9,0,1
+Moon Hostel,164,8,0,0
+Mamaison Hotel Le Regina Warsaw,797,9,1,0
+Chill Apartments Airport Apartments,317,8,0,0
+Apartamenty Media Park,190,8,1,0
+Hotel Gromada Warszawa Centrum,362,8,1,0
+H15 Boutique Hotel,971,9,1,0
+Mamaison Residence Diana,514,9,0,0
+Villa Plaza,228,8,1,0
+Airport Hotel Okecie,354,9,1,0
+o3Hotel,210,8,1,0
+Regent Warsaw Hotel,438,8,1,0
+Arcus Premium Hostel,206,8,1,0
+Hotel Arche Geologiczna,275,9,0,0
+Hotel Polonia Palace,498,9,1,0
+HETMAN,259,8,1,0
+Hotel Bellotto,1&nbsp;444,9,1,0
+Hotelik Okecie 39 - free transfer to airport,131,7,0,0
+Platinum Towers E-Apartments,342,8,0,0
+Hit Hotel,203,8,1,0
+Raffles Europejski Warsaw,3&nbsp;088,10,1,0
+Hotel Warszawa,804,9,1,0
+Logos,302,8,1,0
+Platinum Residence,365,8,0,0
+Apartament (30 m²) w okolicy Żoliborz z 1 sypialnią/ami i 1 łazienką/ami (romentic beach palace),1&nbsp;500,NA,0,0
+Apartament (57 m²) w okolicy Warszawa - centrum z 2 sypialnią/ami i 2 łazienką/ami (Apartament Arsenał),360,NA,0,0
